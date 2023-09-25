@@ -1,0 +1,74 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+header{ grid-area: header;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 2fr 1fr 1fr ;
+    grid-template-areas: 
+    "logo logo frason frason"
+    "nav1 nav2 bienvenida bienvenida"
+    "nav3 nav4 bienvenida bienvenida";
+    justify-items: center;
+    align-items: center;
+    background-color: lightblue;
+    }
+
+header img {
+    grid-area: logo;
+    width:100px;
+    background-color: lightblue;
+}
+
+nav {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    background-color: lightblue;
+ }
+ nav a {
+    text-decoration: none;
+    color: blue;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 5px;
+ }
+
+ #nav1 {
+    grid-area:nav1;
+    
+ }
+
+ #nav2 {
+    grid-area:nav2;
+    
+ }
+
+ #nav3 {
+    grid-area:nav3;
+    
+ }
+
+ #nav4 {
+    grid-area:nav4;
+    
+ }
+
+ .texto {
+    color: red;
+    border: 1px solid black;
+    
+    font-weight: bold;
+    background-color: lightblue;
+ }
+
+ #frason{
+    grid-area:frason;
+ }
+ #bienvenida{
+   grid-area:bienvenida;
+ }
