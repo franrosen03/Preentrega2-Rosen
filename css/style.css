@@ -2,7 +2,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: lightblue;
+    overflow: scroll;
 }
 
 header{ grid-area: header;
@@ -72,3 +73,79 @@ nav {
  #bienvenida{
    grid-area:bienvenida;
  }
+
+.proxpartido {
+    grid-area: aside;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1 fr;
+    grid-template-areas: 
+    "titul titul titul"
+    "logo2 prim quema"
+    "seg seg seg";
+    justify-items: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#titul{
+   grid-area: titul;
+   font-weight: bold;
+   background-color: lightblue;
+}
+
+#prim{
+    grid-area: prim;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+#seg{
+    grid-area: seg;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+#logo2{
+    grid-area: logo2;  
+    background-color: lightblue;
+}
+
+#quema {
+    grid-area: quema;
+    background-color: lightblue;
+}
+
+aside img {
+    width:100px;
+    background-color: lightblue;
+}
+
+#ingreso {
+    padding-left:5px ;
+    background-color: lightblue;
+    display: flex;
+   flex-wrap: nowrap;
+}
+
+#titnot {
+    
+}
+
+#notdest {
+    background-color: red;
+    font-weight: bolder;
+    justify-self: center;
+   
+}
+
+
+#noticias {
+    text-decoration: underline solid 1px blue;
+}
+#noticias img {
+    width:100%;
+    padding:20px 5px 5px 5px;
+    
+}
+
