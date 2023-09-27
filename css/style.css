@@ -149,3 +149,106 @@ aside img {
     
 }
 
+iframe {
+    justify-content: center;
+    align-items: center;
+    width:75%;
+    height: 200px;
+    padding: 20px;
+}
+
+#menu {
+    padding:10px;
+    background-color: black;
+}
+
+
+#tribunas {
+    padding: 20px;
+    grid-area: header;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "nav5 nav6 nav7"
+    "nav8 nav9 nav10";
+    justify-items: center;
+    align-items: center;
+    background-color: lightblue;
+    
+    
+}
+
+
+.sectores {
+    color:red;
+    
+}
+
+
+#nav5 {
+    grid-area: nav5;
+    padding: 5px;
+   
+}
+
+#nav6 {
+    grid-area: nav6;
+    padding: 5px;
+}
+
+#nav7 {
+    grid-area: nav7;
+    padding: 5px;
+}
+
+#nav8{
+    grid-area: nav8;
+    padding: 5px;
+}
+
+#nav9 {
+    grid-area: nav9;
+    padding: 5px;
+}
+
+#nav10 {
+    grid-area: nav10;
+    padding: 5px;
+}
+
+#nunca {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+h1{
+    width: 100%;
+    padding: 10px;
+}
+
+aside{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: larger;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#tienda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a img {
+    padding:20px;
+    width:300px;
+}
