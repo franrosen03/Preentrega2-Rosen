@@ -38,7 +38,9 @@ nav {
     border: 1px solid black;
     padding: 5px;
  }
-
+#head1{
+    font-size: 1rem;
+}
  #nav1 {
     grid-area:nav1;
     
@@ -62,7 +64,7 @@ nav {
  .texto {
     color: red;
     border: 1px solid black;
-    
+    font-size: 1rem;
     font-weight: bold;
     background-color: lightblue;
  }
@@ -75,6 +77,7 @@ nav {
  }
 
 .proxpartido {
+    font-size: 30px;
     grid-area: aside;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -83,9 +86,7 @@ nav {
     "titul titul titul"
     "logo2 prim quema"
     "seg seg seg";
-    justify-items: center;
-    align-items: center;
-    background-color: lightblue;
+ background-color: lightblue;
 }
 
 #titul{
@@ -109,15 +110,18 @@ nav {
 #logo2{
     grid-area: logo2;  
     background-color: lightblue;
+    
 }
 
 #quema {
     grid-area: quema;
     background-color: lightblue;
+    height:15vh;
 }
 
 aside img {
-    width:100px;
+    padding: 20px;
+    height:15vh;
     background-color: lightblue;
 }
 
@@ -128,9 +132,7 @@ aside img {
    flex-wrap: nowrap;
 }
 
-#titnot {
-    
-}
+
 
 #notdest {
     background-color: red;
@@ -152,9 +154,9 @@ aside img {
 iframe {
     justify-content: center;
     align-items: center;
-    width:75%;
     height: 200px;
     padding: 20px;
+    grid-area: iframe;
 }
 
 #menu {
@@ -162,7 +164,11 @@ iframe {
     background-color: black;
 }
 
-
+#instructions{
+    
+    padding-left: 15px;
+    padding-top: 15px;
+}
 #tribunas {
     padding: 20px;
     grid-area: header;
@@ -223,6 +229,10 @@ iframe {
     font-weight: bold;
 }
 
+.desnot{
+    font-size: 2rem;
+}
+
 h1{
     width: 100%;
     padding: 10px;
@@ -247,8 +257,104 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 a img {
     padding:20px;
-    width:300px;
+    height:40vh;
 }
+
+#juego {
+    grid-area: juego;
+}
+
+
+header{
+    font-size: 2rem;
+}
+p{
+    font-size: 3rem;
+}
+
+h1{font-size: 3rem;}
+
+h2{font-size: 3rem;}
+
+form{font-size: 2rem;}
+
+@media (min-width:750px){
+    
+    #mediu {
+            grid-area:mediu;
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "iframe juego";
+        }
+       iframe{
+        width:90%;
+        height:400px;
+       } 
+       #tienda{
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+        grid-template-areas: 
+        "titu suple"
+        "textitu texsup"
+        "negra urbana"
+        "textres texrem"
+        "buzo bebe"
+        "texbuz texbebe"
+        "mochi short"
+        "texmoch texshor";
+              }
+
+       
+
+}
+
+.descri{
+    font-size:2rem;
+}
+#titu{
+    grid-area: titu;
+
+}
+
+#suple{
+    grid-area: suple;
+}
+
+#negra{
+    grid-area: negra;
+}
+
+#urbana{grid-area: urbana;}
+
+#buzo{grid-area:buzo;}
+
+#bebe{grid-area: bebe;}
+
+#mochi{grid-area: mochi;}
+
+#short{grid-area: short;}
+
+#textitu{grid-area: textitu;}
+
+#texsup{grid-area: texsup;}
+
+#texmoch{grid-area: texmoch;}
+
+#textres{grid-area: textres;}
+
+#texrem{grid-area: texrem;}
+
+#texbuz{grid-area: texbuz;}
+
+#texbebe{grid-area: texbebe;}
+
+#texshor{grid-area: texshor;}
+
