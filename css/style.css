@@ -130,6 +130,7 @@ aside img {
     background-color: lightblue;
     display: flex;
    flex-wrap: nowrap;
+   grid-area: ingreso;
 }
 
 
@@ -228,7 +229,11 @@ iframe {
     padding-right: 15px;
     font-weight: bold;
 }
-
+#titnot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .desnot{
     font-size: 2rem;
 }
@@ -311,9 +316,71 @@ form{font-size: 2rem;}
         "mochi short"
         "texmoch texshor";
               }
+             
+      #head1{
+        padding: 20px;
+        grid-area: head1;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-areas: 
+        "nav1 nav2 logo nav3 nav4"
+        "frason frason frason frason frason"
+        "bienvenida bienvenida bienvenida bienvenida bienvenida";
+      }
+
+      .navs{
+        font-size: 2rem;
+            }
+
+     .texto{
+        font-size: 2rem;
+          }
+
+    #secondo{
+        grid-area: secondo;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        padding-left: 15px;
+         }
+    #secondo img {
+        width:250px;
+        height: 200px;
+    }
+
+    #noticias{
+        grid-area: noticias;
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr;
+        grid-template-areas: 
+        "noti1 noti2"
+        "desnot1 desnot2"
+        "noti3 noti4"
+        "desnot3 desnot4";
+    }
 
        
 
+
+}
+
+
+ #noti1{grid-area: noti1;}
+ #noti2{grid-area: noti2;}
+ #noti3{grid-area: noti3;}
+ #noti4{grid-area: noti4;}
+ #desnot1{grid-area: desnot1;}
+ #desnot2{grid-area: desnot2;}
+ #desnot3{grid-area: desnot3;}
+ #desnot4{grid-area: desnot4;}
+a:hover{
+    background-color:red;
+}
+
+.navs{
+    font-size: ;
 }
 
 .descri{
