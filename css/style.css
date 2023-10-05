@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: lightblue;
-    overflow: scroll;
+
+    
 }
 
 header{ grid-area: header;
@@ -163,12 +164,14 @@ iframe {
 #menu {
     padding:10px;
     background-color: black;
+    
 }
 
 #instructions{
     
     padding-left: 15px;
     padding-top: 15px;
+   
 }
 #tribunas {
     padding: 20px;
